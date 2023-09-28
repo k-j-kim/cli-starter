@@ -1,0 +1,27 @@
+{
+  "name": "cli-starter",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "bin": {
+    "cli-test": "./bin/cli-test"
+  },
+  "scripts": {
+    "test:install": "npm link",
+    "test:uninstall": "npm unlink",
+    "test:cli-test": "cli-test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/k-j-kim/cli-starter.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/k-j-kim/cli-starter/issues"
+  },
+  "homepage": "https://github.com/k-j-kim/cli-starter#readme",
+  "dependencies": {
+    "shelljs": "^0.8.5"
+  }
+}

@@ -1,0 +1,8 @@
+#!/usr/bin/env node
+
+(async () => {
+  const { argv } = await import("node:process");
+  const { test } = await import("../src/cli-test.mjs");
+
+  test(argv);
+})();
