@@ -1,4 +1,5 @@
 import shell from "shelljs";
+import { color } from "./util-color.mjs";
 
 function execAsync(cmd, opts = {}) {
   return new Promise(function (resolve, reject) {
@@ -10,6 +11,7 @@ function execAsync(cmd, opts = {}) {
 }
 
 function exec(cmd, opts = {}) {
+  console.log(color("running command", color.bgCyan), color(cmd, color.fgGreen));
   return shell.exec(cmd, opts);
 }
 

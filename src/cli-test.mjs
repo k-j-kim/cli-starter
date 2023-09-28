@@ -1,4 +1,4 @@
-import { exec, execAsync } from "./utils.mjs";
+import { exec, execAsync } from "./util-shell.mjs";
 
 async function test(argv) {
   console.log("argv:", argv);
